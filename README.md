@@ -16,8 +16,12 @@ A lightweight, production-ready Spring Boot boilerplate for handling AJAX reques
 ## Quick Start
 
 ### Windows
+```bash
 run.bat
+```
 
 ### Linux / macOS
+```bash
 chmod +x run.sh
 ./run.sh
+```
