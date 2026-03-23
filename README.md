@@ -1,17 +1,20 @@
 # Java AJAX Server
 
-A lightweight, production-ready Spring Boot boilerplate for handling AJAX requests. Designed for easy integration with any frontend and seamless work in VS Code and IntelliJ IDEA.
+A production-ready Spring Boot 3.4+ template for handling AJAX requests. Optimized for VS Code and IntelliJ IDEA.
 
 ## Features
-- **DTO Support**: Strongly typed request/response handling.
-- **Global Exception Handling**: Returns clean JSON errors instead of stack traces.
-- **CORS Enabled**: Ready for cross-origin requests from any frontend.
-- **Unified Logging**: Structured logging with SLF4J.
-- **Cross-Platform**
+- **DTO Support**: Strongly typed request and response handling.
+- **Validation**: Jakarta Validation for incoming JSON payloads.
+- **Global Exception Handling**: Returns structured JSON errors instead of stack traces.
+- **Docker Integration**: Includes Dockerfile and docker-compose.yml.
+- **CORS Configuration**: Pre-configured for cross-origin frontend requests.
+- **Security**: Updated dependencies to mitigate known vulnerabilities (CVEs).
+- **Cross-Platform**: Windows/Linux/MacOS
 
 ## Prerequisites
-- **Java 17** or higher
-- **Maven**
+- Java 17 or higher
+- Docker (optional)
+- Maven (included via wrapper)
 
 ## Quick Start
 
@@ -25,3 +28,7 @@ run.bat
 chmod +x run.sh
 ./run.sh
 ```
+
+### Docker
+```bash
+docker-compose up --build
